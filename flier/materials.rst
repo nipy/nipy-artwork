@@ -52,6 +52,36 @@ NiTime
 ~~~~~~
 http://nipy.org/nitime
 
+.. figure:: ../pics/nitime_logo.pdf
+   :alt: nitime
+   :align: right
+   :figwidth: 35%
+
+Nitime is a library for time-series analysis of data from neuroscience
+experiments.
+
+It contains a core of numerical algorithms for time-series analysis both in
+the time and spectral domains, a set of container objects to represent
+time-series, and auxiliary objects that expose a high level interface to the
+numerical machinery and make common analysis tasks easy to express with
+compact and semantically clear code.
+
+Features:
+ - Spectral transforms (including multi-tapered spectral analysis) and
+   filtering. 
+ - Connectivity measures (Correlation, Coherency, Granger 'causality').
+ - Event-related analysis (including OLS finitie impulse response).
+
+.. figure:: ../pics/nitime_analysis.pdf
+   :alt: nitime
+   :align: right
+   :figwidth: 35%
+
+.. figure:: ../pics/nitime_network.pdf
+   :alt: nitime
+   :align: right
+   :figwidth: 35%
+
 
 PyMVPA
 ~~~~~~
