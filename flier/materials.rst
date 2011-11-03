@@ -58,6 +58,11 @@ Nipype allows you to:
  - make your research easily reproducible
  - share your processing workflows with the community
 
+Gorgolewski K, Burns CD, Madison C, Clark D, Halchenko YO, Waskom ML, Ghosh SS 
+(2011) Nipype: a flexible, lightweight and extensible neuroimaging data 
+processing framework in Python. Front. Neuroinform. 5:13. 
+doi: 10.3389/fninf.2011.00013
+
 .. figure:: ../pics/nipype_arch.pdf
    :alt: Nipype Architecture
    :align: right
