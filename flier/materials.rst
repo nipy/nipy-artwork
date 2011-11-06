@@ -102,6 +102,13 @@ NIPY has algorithms for the analysis of neuroimaging data including:
 * Basic visualization of results in 2D and 3D
 * Basic time series diagnostics
 * Clustering and activation pattern analysis across subjects
+* Reproducibility analysis for group studies
+
+.. figure:: ../pics/nipy_viz.pdf
+   :alt: nipy activation map
+   :align: right
+   :figwidth: 50%
+
 
 Nipype
 ~~~~~~
