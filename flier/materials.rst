@@ -16,6 +16,25 @@ PsychoPy
 ~~~~~~~~
 http://www.psychopy.org
 
+.. figure:: ../pics/psychopy_logo.svg
+   :alt: PsychoPy
+   :align: right
+   :figwidth: 35%
+
+PsychoPy is an easy, precise, platform-independent package for stimulus presentation. Suitable for psychophysics, neuroimaging, and all areas of psychology.
+
+Features:
+
+    - Huge variety of stimuli generated in real-time
+    - Platform independent - run the same script on Win, OS X or Linux
+    - Flexible stimulus units (degrees, cm, or pixels)
+    - Coder interface for those that like to program
+    - Builder interface for those that don’t
+    - Input from keyboard, mouse, joystick or button boxes
+    - Multi-monitor support
+    - Automated monitor calibration (for supported photometers)
+
+
 
 OpenSesame
 ~~~~~~~~~~
