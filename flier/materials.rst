@@ -39,10 +39,29 @@ OpenSesame
 ~~~~~~~~~~
 http://www.cogsci.nl/software/opensesame
 
-...
+.. figure:: ../pics/opensesame_logo.svg
 
-Input/Output
-------------
+OpenSesame is a graphical experiment builder for the social sciences.
+
+Features:
+
+    - A comprehensive and intuitive graphical user interface
+    - Built-in WYSIWYG drawing tools for creating visual stimuli 
+    - Cross-platform compatibility (Windows, Linux, Mac OS)
+    - Python scripting for complex tasks
+    - A plug-in framework
+    - Compatibility (through plug-ins) with commonly used devices, such as:
+        - The Eyelink series of eye trackers
+        - The Serial Response Box
+        - The Mantra object tracker
+    - Compatibility with popular Python libraries, such as:
+        - PsychoPy
+        - PyGame
+        - PyOpenGL
+        - OpenCV
+        - NumPy/ SciPy 
+
+
 
 NiBabel
 ~~~~~~~
