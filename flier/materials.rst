@@ -38,10 +38,35 @@ NiPy
 http://nipy.org/nipy
 
 
-NiPype
+Nipype
 ~~~~~~
 http://nipy.org/nipype
 
+ Nipype provides an environment that encourages interactive exploration of 
+algorithms from different packages (e.g., SPM, FSL, FreeSurfer, Camino, AFNI, 
+Slicer), eases the design of workflows within and between packages, and 
+reduces the learning curve necessary to use different packages. Nipype is 
+creating a collaborative platform for neuroimaging software development in a 
+high-level language and addressing limitations of existing pipeline systems.
+
+Nipype allows you to:
+
+ - easily interact with tools from different software packages
+ - combine processing steps from different software packages
+ - develop new workflows faster by reusing common steps from old ones
+ - process data faster by running it in parallel on many cores/machines
+ - make your research easily reproducible
+ - share your processing workflows with the community
+
+Gorgolewski K, Burns CD, Madison C, Clark D, Halchenko YO, Waskom ML, Ghosh SS 
+(2011) Nipype: a flexible, lightweight and extensible neuroimaging data 
+processing framework in Python. Front. Neuroinform. 5:13. 
+doi: 10.3389/fninf.2011.00013
+
+.. figure:: ../pics/nipype_arch.pdf
+   :alt: Nipype Architecture
+   :align: right
+   :figwidth: 100%
 
 DiPy
 ~~~~
