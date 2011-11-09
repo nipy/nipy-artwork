@@ -234,6 +234,84 @@ Features:
    :figwidth: 100%
 
 
+BrainVISA
+~~~~~~~~~
+http://brainvisa.info
+
+.. image:: ../pics/brainvisa_logo.png
+    :align: right
+
+BrainVISA is an open-source, modular and customizable software platform built
+to host heterogeneous tools dedicated to neuroimaging research. It aims at
+helping researchers in developing new neuroimaging tools, sharing data and
+distributing their software.
+
+Features:
+
+- Written in pure Python
+- Databasing capabilities
+- Massive computation facilities using Soma-workflow
+- Open environment, with many toolboxes
+- Specialized toolboxes for T1 MRI processing, sulci ang gyri morphometry,
+  diffusion imaging and fibers tracking, surfacic and structural analysis,
+  3D histology...
+- Links with other software like SPM, FSL, FreeSurfer, or CIVET
+
+D. Geffroy, D. Rivière, I. Denghien, N. Souedet, S. Laguitton, and
+Y. Cointepas. BrainVISA: a complete software platform for neuroimaging.
+In Python in Neuroscience workshop, Paris, Aug. 2011.
+
+.. figure:: ../pics/brainvisa_screenshot.png
+    :alt: BrainVISA
+    :align: right
+    :figwidth: 100%
+
+
+AIMS
+~~~~
+http://brainvisa.info
+
+AIMS is the image processing library provided within the BrainVISA environment.
+It is independent from BrainVISA, and the basis for the Anatomist viewer.
+
+Features:
+
+- C++ and Python APIs, including integration with Numpy arrays
+- Open and plugin-based IO system supporting various volume formats (NIFTI-1,
+  Analyze, DICOM, MINC, ECAT, and several others including all standard 2D
+  image formats), several mesh and texture formats (GIFTI, PLY, CIVET,
+  BrainVisa Mesh and Tri, export as VRML-1, POV, ...), graphs...
+- Many neuromiaging data manipulation tools and image processing algorithms
+
+
+Soma-Workflow
+~~~~~~~~~~~~~
+http://brainvisa.info/soma-workflow
+
+.. figure:: ../pics/soma-workflow.png
+   :alt: Soma-workflow
+   :align: right
+   :figwidth: 35%
+
+Soma-workflow is a unified and simple interface to parallel computing resource.
+It is an open source Python application which aims at making easier the use of
+parallel resources by non expert users and external software.
+
+Features:
+
+- Python library, and GUI
+- Interfaces with many cluster management tools (Grid Engine, LSF, PBS,
+  Condor, ...) via DRMAA, or via the python API.
+- Local multicore implementation
+- Handles files transfers
+- Handles client disconnection while jobs are running on a remote resource
+
+S. Laguitton, D. Rivière, T. Vincent, C. Fischer, D. Geffroy, N. Souedet,
+I. Denghien, and Y. Cointepas. Soma-workflow: a unified and simple interface
+to parallel computing resources. In MICCAI Workshop on High Performance and
+Distributed Computing for Medical Imaging, Toronto, Sep. 2011.
+
+
 Visualization
 -------------
 
@@ -242,4 +320,28 @@ PySurfer
 http://pysurfer.github.com
 
 
+Anatomist
+~~~~~~~~~
+http://brainvisa.info
 
+.. figure:: ../pics/anatomist.jpg
+   :alt: Anatomist
+   :align: right
+   :figwidth: 35%
+
+Anatomist is a powerful 3D visualization software dedicated to neuroimaging.
+It is cross-platform and open-source. It is an independent part of the
+BrainVisa environment, and relies on the AIMS library, inheriting its features.
+
+Features:
+
+- C++ and Python APIs
+- Interactive, fast 3D via direct OpenGL
+- Usable as a standalone software or as a library to build dedicated GUIs
+- Supports all kinds of neuroimaging objects, including complex structured
+  objects
+- Interactive ROI drawing, voxel-based or on surfaces
+
+D. Rivière, D. Geffroy, I. Denghien, N. Souedet, and Y. Cointepas.
+Anatomist: a python framework for interactive 3D visualization of neuroimaging
+data. In Python in Neuroscience workshop, 2011.
