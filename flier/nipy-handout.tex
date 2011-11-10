@@ -255,297 +255,152 @@ and resampling schemes
 
 %___________________________________________________________________________
 
-\subsection*{Nipype%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{Nipype}%
-  \label{nipype}%
-}
+\ndproject{Nipype}{http://nipy.org/nipype}{blank.png}
 
-\url{http://nipy.org/nipype}
-%
-
-Nipype provides an environment that encourages interactive exploration of
-
-algorithms from different packages (e.g., SPM, FSL, FreeSurfer, Camino, AFNI,
-Slicer), eases the design of workflows within and between packages, and
-reduces the learning curve necessary to use different packages. Nipype is
-creating a collaborative platform for neuroimaging software development in a
-high-level language and addressing limitations of existing pipeline systems.
-
-Nipype allows you to:
-%
-\begin{quote}
-%
-\begin{itemize}
-
+Nipype provides an environment that encourages interactive exploration
+of algorithms from different packages (e.g., SPM, FSL, FreeSurfer,
+Camino, AFNI, Slicer), eases the design of workflows within and
+between packages, and reduces the learning curve necessary to use
+different packages. Nipype is creating a collaborative platform for
+neuroimaging software development in a high-level language and
+addressing limitations of existing pipeline systems.  Nipype allows you to
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item easily interact with tools from different software packages
-
 \item combine processing steps from different software packages
-
 \item develop new workflows faster by reusing common steps from old ones
-
 \item process data faster by running it in parallel on many cores/machines
-
 \item make your research easily reproducible
-
 \item share your processing workflows with the community
-
 \end{itemize}
-
-\end{quote}
-
+\includegraphics[width=\columnwidth]{nipype_arch.pdf}
 Gorgolewski K, Burns CD, Madison C, Clark D, Halchenko YO, Waskom ML, Ghosh SS
 (2011) Nipype: a flexible, lightweight and extensible neuroimaging data
 processing framework in Python. Front. Neuroinform. 5:13.
 doi: 10.3389/fninf.2011.00013
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/nipype_arch.pdf}}
-\end{figure}
 
 
 %___________________________________________________________________________
 
-\subsection*{DiPy%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{DiPy}%
-  \label{dipy}%
-}
+\ndproject{DiPy}{http://nipy.org/dipy}{dipy-banner.png}
 
-\url{http://nipy.org/dipy}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/dipy-banner.png}}
-\end{figure}
-
-Dipy is an international, free and open soure software project for
-diffusion magnetic resonance imaging analysis.
-
-Dipy is multiplatform and will run under any standard operating system such as
-\emph{Windows}, \emph{Linux}, \emph{Mac OS X}.
-
-Just some of our \textbf{state-of-the-art} applications are:
-%
-\begin{itemize}
-
+Dipy is an international FOSS project for diffusion magnetic resonance
+imaging analysis.  Dipy is multiplatform and will run under any
+standard operating system such as \emph{Windows}, \emph{Linux},
+\emph{Mac OS X}.  Some of our \textbf{state-of-the-art} applications
+are:
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Reconstruction algorithms e.g. GQI, DTI
-
 \item Tractography generation algorithms e.g. EuDX
-
 \item Intelligent downsampling of tracks
-
 \item Ultra fast tractography clustering
-
 \item Resampling datasets with anisotropic voxels to isotropic
-
 \item Visualizing multiple brains simultaneously
-
 \item Finding track correspondence between different brains
-
-\item Warping tractographies into another space e.g. MNI space
-
-\item Reading many different file formats e.g. Trackvis or Nifti
-
-\item Dealing with huge tractographies without memory restrictions
-
-\item Playing with datasets interactively without storing
-
-\item And much more and even more to come in next releases
-
+\item Warping tractographies into another (e.g. MNI) space
+\item Support of various  file formats e.g. Trackvis or NIfTI
+%\item Dealing with huge tractographies without memory restrictions
+%\item Playing with datasets interactively without storing
 \end{itemize}
 
 
 %___________________________________________________________________________
 
-\subsection*{NiTime%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{NiTime}%
-  \label{nitime}%
-}
-
-\url{http://nipy.org/nitime}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/nitime_logo.pdf}}
-\end{figure}
+\ndproject{NiTime}{http://nipy.org/nitime}{nitime_logo.pdf}
 
 Nitime is a library for time-series analysis of data from neuroscience
-experiments.
-
-It contains a core of numerical algorithms for time-series analysis both in
-the time and spectral domains, a set of container objects to represent
-time-series, and auxiliary objects that expose a high level interface to the
-numerical machinery and make common analysis tasks easy to express with
-compact and semantically clear code.
-%
-\begin{description}
-\item[{Features:}] \leavevmode %
-\begin{itemize}
-
+experiments.  It contains a core of numerical algorithms for
+time-series analysis both in the time and spectral domains, a set of
+container objects to represent time-series, and auxiliary objects that
+expose a high level interface to the numerical machinery and make
+common analysis tasks easy to express with compact and semantically
+clear code.
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Spectral transforms (including multi-tapered spectral analysis) and
 filtering.
-
 \item Connectivity measures (Correlation, Coherency, Granger 'causality').
-
 \item Event-related analysis (including OLS finitie impulse response).
-
 \end{itemize}
-
-\end{description}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/nitime_analysis.pdf}}
-\end{figure}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/nitime_network.pdf}}
-\end{figure}
-
+%\includegraphics[width=\columnwidth]{nitime_analysis.pdf}
+\includegraphics[width=0.9\columnwidth]{nitime_network.pdf}
 
 %___________________________________________________________________________
 
-\subsection*{PyMVPA%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{PyMVPA}%
-  \label{pymvpa}%
-}
-
-\url{http://www.pymvpa.org}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/pymvpa_logo.pdf}}
-\end{figure}
+\ndproject{PyMVPA}{http://www.pymvpa.org}{pymvpa_logo.pdf}
 
 PyMVPA eases statistical learning analyses (or otherwise called
 Multivariate pattern analysis, MVPA) of large datasets, with an accent
 on neuroimaging.
-
-Features:
-%
-\begin{quote}
-%
-\begin{itemize}
-
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Easy I/O to Neuroimaging data (via NiBabel)
-
 \item Variety of machine learning methods (e.g. SVM, SMLR, kNN)
-
 \item Uniform interfaces to other toolkits (e.g. MDP, Shogun, Scikit-learn)
-
 \item Flexible Searchlight-ing
-
 \item Uber-Fast GNB Searchlight-ing
-
 \item Hyperalignment (Haxby et al 2011, Neuron)
-
 \end{itemize}
+\includegraphics[width=\columnwidth]{pymvpa_shot.pdf}
 
-\end{quote}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/pymvpa_shot.pdf}}
-\end{figure}
-
+Hanke, M., Halchenko, Y. O., Sederberg, P. B., Hanson, S. J., Haxby, J. V.
+\& Pollmann, S. (2009).
+PyMVPA: A Python toolbox for multivariate pattern analysis of fMRI data. Neuroinformatics, 7, 37-53.\\
+Haxby, J. V. , Guntupalli, J. S. , Connolly, A. C. , Halchenko,
+Y. O. , Conroy, B. R., Gobbini, M. I. , Hanke, M. and Ramadge,
+P. J. (2011). A Common, High-Dimensional Model of the Representational
+Space in Human Ventral Temporal Cortex. Neuron, 72, 404–416.
 
 %___________________________________________________________________________
 
-\subsection*{BrainVISA%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{BrainVISA}%
-  \label{brainvisa}%
-}
-
-\url{http://brainvisa.info}
-
-\noindent{\hfill\includegraphics{../pics/brainvisa_logo.png}}
+\ndproject{BrainVISA}{http://brainvisa.info}{brainvisa_logo.png}
 
 BrainVISA is an open-source, modular and customizable software platform built
 to host heterogeneous tools dedicated to neuroimaging research. It aims at
 helping researchers in developing new neuroimaging tools, sharing data and
 distributing their software.
-
-Features:
-%
-\begin{itemize}
-
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Written in pure Python
-
 \item Databasing capabilities
-
 \item Massive computation facilities using Soma-workflow
-
 \item Open environment, with many toolboxes
-
 \item Specialized toolboxes for T1 MRI processing, sulci ang gyri morphometry,
 diffusion imaging and fibers tracking, surfacic and structural analysis,
-3D histology...
-
+3D histology\ldots
 \item Links with other software like SPM, FSL, FreeSurfer, or CIVET
-
 \end{itemize}
-
+\includegraphics[width=0.9\columnwidth]{../pics/brainvisa_screenshot.png}
 D. Geffroy, D. Rivière, I. Denghien, N. Souedet, S. Laguitton, and
 Y. Cointepas. BrainVISA: a complete software platform for neuroimaging.
 In Python in Neuroscience workshop, Paris, Aug. 2011.
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/brainvisa_screenshot.png}}
-\end{figure}
-
 
 %___________________________________________________________________________
 
-\subsection*{AIMS%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{AIMS}%
-  \label{aims}%
-}
-
-\url{http://brainvisa.info}
+\ndproject{AIMS}{http://brainvisa.info}{blank.png}
 
 AIMS is the image processing library provided within the BrainVISA environment.
 It is independent from BrainVISA, and the basis for the Anatomist viewer.
-
-Features:
-%
-\begin{itemize}
-
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item C++ and Python APIs, including integration with Numpy arrays
-
 \item Open and plugin-based IO system supporting various volume formats (NIFTI-1,
 Analyze, DICOM, MINC, ECAT, and several others including all standard 2D
-image formats), several mesh and texture formats (GIFTI, PLY, CIVET,
-BrainVisa Mesh and Tri, export as VRML-1, POV, ...), graphs...
-
+image formats), several mesh and texture formats (GIFTI, PLY,
+% CIVET, BrainVisa Mesh and Tri, export as VRML-1, POV, 
+\ldots), graphs.
 \item Many neuromiaging data manipulation tools and image processing algorithms
-
 \end{itemize}
-
 
 %___________________________________________________________________________
 
-\subsection*{Soma-Workflow%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{Soma-Workflow}%
-  \label{soma-workflow}%
-}
-
-\url{http://brainvisa.info/soma-workflow}
-\begin{figure}
-\noindent\makebox[\textwidth][c]{\includegraphics{../pics/soma-workflow.png}}
-\end{figure}
+\ndproject{Soma-Workflow}{http://brainvisa.info/soma-workflow}{soma-workflow.png}
 
 Soma-workflow is a unified and simple interface to parallel computing resource.
 It is an open source Python application which aims at making easier the use of
 parallel resources by non expert users and external software.
-
-Features:
-%
-\begin{itemize}
-
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Python library, and GUI
-
 \item Interfaces with many cluster management tools (Grid Engine, LSF, PBS,
-Condor, ...) via DRMAA, or via the python API.
-
+Condor, \ldots) via DRMAA, or via the python API.
 \item Local multicore implementation
-
 \item Handles files transfers
-
 \item Handles client disconnection while jobs are running on a remote resource
-
 \end{itemize}
 
 S. Laguitton, D. Rivière, T. Vincent, C. Fischer, D. Geffroy, N. Souedet,
@@ -556,23 +411,19 @@ Distributed Computing for Medical Imaging, Toronto, Sep. 2011.
 
 %___________________________________________________________________________
 
-\section*{Visualization%
-  \phantomsection%
-  \addcontentsline{toc}{section}{Visualization}%
-  \label{visualization}%
-}
-
+\ndsection{Visualization}
 
 %___________________________________________________________________________
 
-\subsection*{PySurfer%
-  \phantomsection%
-  \addcontentsline{toc}{subsection}{PySurfer}%
-  \label{pysurfer}%
-}
+\ndproject{PySurfer}{http://pysurfer.github.com}{pysurfer_logo.png}
 
-\url{http://pysurfer.github.com}
-
+PySurfer is a module for visualization and interaction with cortical
+surface representations of neuroimaging data from Freesurfer. It
+extends Mayavi’s powerful visualization engine with a high-level
+interface for working with MRI and MEG data.  PySurfer offers both a
+command-line interface designed to broadly replicate Freesurfer’s
+Tksurfer program as well as a Python library for writing scripts to
+efficiently explore complex datasets.
 
 %___________________________________________________________________________
 
