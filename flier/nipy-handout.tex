@@ -71,10 +71,15 @@
 \vspace{-.5em}
 }
 
-\definecolor{secfgcol}{RGB}{6, 83, 215}
-\definecolor{secbgcol}{RGB}{241, 248, 255}
+\definecolor{secfgcol}{RGB}{102, 153, 0}
+\definecolor{secbgcol}{RGB}{216, 255, 137}
 \definecolor{projfgcol}{RGB}{6,   83, 215}
-\definecolor{projbgcol}{RGB}{241, 248, 255}
+\definecolor{projbgcol}{RGB}{255, 255, 205}
+
+%\definecolor{secfgcol}{RGB}{6, 83, 215}
+%\definecolor{secbgcol}{RGB}{241, 248, 255}
+%\definecolor{projfgcol}{RGB}{6,   83, 215}
+%\definecolor{projbgcol}{RGB}{241, 248, 255}
 
 \newcommand{\ndsection}[1]{\ndheading{#1}{secbgcol}{secfgcol}}
 \newcommand{\ndsubsection}[1]{\ndheading{#1}{secbgcol}{secfgcol}}
@@ -83,13 +88,13 @@
 
 \newcolumntype{V}{>{\arraybackslash} m{.2\linewidth} }
 \newcolumntype{C}{>{\arraybackslash} m{.7\linewidth} }
-\newcommand{\ndproject}[3]{%
+\newcommand{\ndproject}[6]{%
 \vspace{0.5em}
 \begin{ndtable}%
-\rowcolors[\hline]{1}{projbgcol}{} \arrayrulecolor{projbgcol}
+\rowcolors[]{1}{projbgcol}{} \arrayrulecolor{projbgcol}
 \begin{tabularx}{\columnwidth}{CV}\vspace{-.5em}\normalfont\large\bfseries
  #1 \newline {\small\url{#2}} &
- \vspace{-0.25em}\includegraphics[width=0.2\columnwidth]{../pics/#3}\vspace{-0.5em}\end{tabularx}
+ \vspace{#5}\hspace{#6}\includegraphics[width=#4\columnwidth]{../pics/#3}\vspace{-0.5em}\end{tabularx}
 \end{ndtable}
 \vspace{-.5em}
 }
@@ -158,7 +163,7 @@ Find the community @ \url{http://www.nipy.org}
 
 %___________________________________________________________________________
 
-\ndproject{PsychoPy}{http://www.psychopy.org}{psychopy_logo.pdf}
+\ndproject{PsychoPy}{http://www.psychopy.org}{psychopy_logo.pdf}{.2}{-0.25em}{0em}
 
 %\begin{figure}
 %\includegraphics[width=0.3\columnwidth]{../pics/psychopy_logo.pdf}
@@ -169,26 +174,26 @@ stimulus presentation. Suitable for psychophysics, neuroimaging, and
 all areas of psychology.
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Huge variety of stimuli generated in real-time
-\item Platform independent - run the same script on Win, OS X or Linux
+\item Cross-platform -- run the same script on Linux, Win or OS X
 \item Flexible stimulus units (degrees, cm, or pixels)
 \item Coder interface for those that like to program
 \item Builder interface for those that don’t
 \item Input from keyboard, mouse, joystick or button boxes
 \item Multi-monitor support
-\item Automated monitor calibration (for supported photometers)
+\item Automated monitor calibration (supported photometers)
 \end{itemize}
 \includegraphics[width=\columnwidth]{../pics/psychopyBuilder.png}
 
 
 %___________________________________________________________________________
 
-\ndproject{OpenSesame}{http://www.cogsci.nl/software/opensesame}{opensesame_logo.pdf}
+\ndproject{OpenSesame}{http://www.cogsci.nl/software/opensesame}{opensesame_logo.pdf}{.2}{-0.25em}{0em}
 
 OpenSesame is a graphical experiment builder for the social sciences.
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item A comprehensive and intuitive graphical user interface
 \item Built-in WYSIWYG drawing tools for creating visual stimuli
-\item Cross-platform compatibility (Windows, Linux, Mac OS)
+\item Cross-platform % compatibility (Windows, Linux, Mac OS)
 \item Python scripting for complex tasks
 \item A plug-in framework
 \item Compatibility (through plug-ins) with commonly used devices:
@@ -212,7 +217,7 @@ OpenSesame is a graphical experiment builder for the social sciences.
 %___________________________________________________________________________
 \ndsection{Data I/O}
 
-\ndproject{NiBabel}{http://nipy.org/nibabel}{reggie.png}
+\ndproject{NiBabel}{http://nipy.org/nibabel}{reggie.png}{.2}{-4.25em}{0em}
 
 Nibabel provides read and write access to some common medical and
 neuroimaging file formats, including:
@@ -235,7 +240,7 @@ available via NumPy arrays.
 
 %___________________________________________________________________________
 
-\ndproject{NiPy}{http://nipy.org/nipy}{blank.png}
+\ndproject{NiPy}{http://nipy.org/nipy}{blank.png}{.2}{-1.25em}{0em}
 
 NIPY provides a rich suite of algorithms for pre-processing and
 analysis of neuroimaging data
@@ -255,7 +260,7 @@ and resampling schemes
 
 %___________________________________________________________________________
 
-\ndproject{Nipype}{http://nipy.org/nipype}{blank.png}
+\ndproject{Nipype}{http://nipy.org/nipype}{blank.png}{.2}{-1.25em}{0em}
 
 Nipype provides an environment that encourages interactive exploration
 of algorithms from different packages (e.g., SPM, FSL, FreeSurfer,
@@ -281,7 +286,7 @@ doi: 10.3389/fninf.2011.00013
 
 %___________________________________________________________________________
 
-\ndproject{DiPy}{http://nipy.org/dipy}{dipy-banner.png}
+\ndproject{DiPy}{http://nipy.org/dipy}{dipy-banner.png}{.5}{-0.25em}{-7.2em}
 
 Dipy is an international FOSS project for diffusion magnetic resonance
 imaging analysis.  Dipy is multiplatform and will run under any
@@ -305,7 +310,7 @@ are:
 
 %___________________________________________________________________________
 
-\ndproject{NiTime}{http://nipy.org/nitime}{nitime_logo.pdf}
+\ndproject{NiTime}{http://nipy.org/nitime}{nitime_logo.pdf}{.2}{-0.25em}{0em}
 
 Nitime is a library for time-series analysis of data from neuroscience
 experiments.  It contains a core of numerical algorithms for
@@ -325,7 +330,7 @@ filtering.
 
 %___________________________________________________________________________
 
-\ndproject{PyMVPA}{http://www.pymvpa.org}{pymvpa_logo.pdf}
+\ndproject{PyMVPA}{http://www.pymvpa.org}{pymvpa_logo.pdf}{.45}{-0.25em}{-6em}
 
 PyMVPA eases statistical learning analyses (or otherwise called
 Multivariate pattern analysis, MVPA) of large datasets, with an accent
@@ -350,7 +355,7 @@ Space in Human Ventral Temporal Cortex. Neuron, 72, 404–416.
 
 %___________________________________________________________________________
 
-\ndproject{BrainVISA}{http://brainvisa.info}{brainvisa_logo.png}
+\ndproject{BrainVISA}{http://brainvisa.info}{brainvisa_logo.png}{.2}{-0.25em}{0em}
 
 BrainVISA is an open-source, modular and customizable software platform built
 to host heterogeneous tools dedicated to neuroimaging research. It aims at
@@ -373,7 +378,7 @@ In Python in Neuroscience workshop, Paris, Aug. 2011.
 
 %___________________________________________________________________________
 
-\ndproject{AIMS}{http://brainvisa.info}{blank.png}
+\ndproject{AIMS}{http://brainvisa.info}{blank.png}{.2}{-1.25em}{0em}
 
 AIMS is the image processing library provided within the BrainVISA environment.
 It is independent from BrainVISA, and the basis for the Anatomist viewer.
@@ -389,7 +394,7 @@ image formats), several mesh and texture formats (GIFTI, PLY,
 
 %___________________________________________________________________________
 
-\ndproject{Soma-Workflow}{http://brainvisa.info/soma-workflow}{soma-workflow.png}
+\ndproject{Soma-Workflow}{http://brainvisa.info/soma-workflow}{soma-workflow.png}{.2}{-0.25em}{0em}
 
 Soma-workflow is a unified and simple interface to parallel computing resource.
 It is an open source Python application which aims at making easier the use of
@@ -415,7 +420,7 @@ Distributed Computing for Medical Imaging, Toronto, Sep. 2011.
 
 %___________________________________________________________________________
 
-\ndproject{PySurfer}{http://pysurfer.github.com}{pysurfer_logo.png}
+\ndproject{PySurfer}{http://pysurfer.github.com}{pysurfer_logo.png}{.2}{-0.25em}{0em}
 
 PySurfer is a module for visualization and interaction with cortical
 surface representations of neuroimaging data from Freesurfer. It
@@ -427,7 +432,7 @@ efficiently explore complex datasets.
 
 %___________________________________________________________________________
 
-\ndproject{Anatomist}{http://brainvisa.info}{anatomist.png}
+\ndproject{Anatomist}{http://brainvisa.info}{anatomist.png}{.2}{-0.25em}{0em}
 
 Anatomist is a powerful 3D visualization software dedicated to
 neuroimaging.  It is cross-platform and open-source. It is an
@@ -445,6 +450,7 @@ D. Rivière, D. Geffroy, I. Denghien, N. Souedet, and Y. Cointepas.
 Anatomist: a python framework for interactive 3D visualization of neuroimaging
 data. In Python in Neuroscience workshop, 2011.
 
+\end{multicols}
 \end{document}
 
 %%% Local Variables:
