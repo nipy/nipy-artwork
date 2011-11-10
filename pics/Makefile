@@ -56,6 +56,10 @@ ignore-%:
 	@echo "Rendering $@"
 	@inkscape -z -f "$<" -A "$@"
 
+%.pdf: %.svgz ignore-%.pdf
+	@echo "Rendering $@"
+	@inkscape -z -f "$<" -A "$@"
+
 %.eps: %.svg ignore-%.eps
 	@echo "Rendering $@"
 	@inkscape -z -T -f "$<" -E "$@"

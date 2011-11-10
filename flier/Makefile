@@ -1,8 +1,8 @@
-all: pics
-	rst2pdf materials.rst
+all: pics nipy-handout.pdf
+#	rst2pdf materials.rst
 
 pics:
-	$(MAKE) -C ../pics psychopy_logo.pdf opensesame_logo.pdf
+	$(MAKE) -C ../pics psychopy_logo.pdf opensesame_logo.pdf snakebrain.pdf
 	$(MAKE) -C ../pics
 
 %.pdf: %.tex
