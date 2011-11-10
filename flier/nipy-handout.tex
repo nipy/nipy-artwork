@@ -156,7 +156,7 @@ Find the community @ \url{http://www.nipy.org}
 
 % \hrule
 \end{center}
-\vspace{-1em}
+\vspace{0em}
 
 %___________________________________________________________________________
 
@@ -184,7 +184,7 @@ all areas of psychology.
 \item Automated monitor calibration (supported photometers)
 \end{itemize}
 \includegraphics[width=\columnwidth]{../pics/psychopyBuilder.png}
-
+\vspace{-2em}
 
 %___________________________________________________________________________
 
@@ -248,7 +248,6 @@ and resampling schemes
 \end{itemize}
 \includegraphics[width=\columnwidth]{../pics/nipy_viz.pdf}
 
-
 %___________________________________________________________________________
 
 \ndproject{Nipype}{http://nipy.org/nipype}{blank.png}{.2}{-1.25em}{0em}
@@ -257,22 +256,27 @@ Nipype provides an environment that encourages interactive exploration
 of algorithms from different packages (e.g., SPM, FSL, FreeSurfer,
 Camino, AFNI, Slicer), eases the design of workflows within and
 between packages, and reduces the learning curve necessary to use
-different packages. Nipype is creating a collaborative platform for
-neuroimaging software development in a high-level language and
-addressing limitations of existing pipeline systems.  Nipype allows you to
+different packages.
+% Nipype is creating a collaborative platform for
+%neuroimaging software development in a high-level language and
+%addressing limitations of existing pipeline systems. 
+Nipype allows you to
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item easily interact with tools from different software packages
-\item combine processing steps from different software packages
+\item interact with tools from different software packages
+\item combine processing steps from different packages
 \item develop new workflows faster by reusing common steps from old ones
-\item process data faster by running it in parallel on many cores/machines
+\item process data faster by running in parallel% on many cores/machines
 \item make your research easily reproducible
 \item share your processing workflows with the community
 \end{itemize}
+\vspace{-1em}
 \includegraphics[width=\columnwidth]{nipype_arch.pdf}
-\ndcite{Gorgolewski K, Burns CD, Madison C, Clark D, Halchenko YO, Waskom ML, Ghosh SS
-(2011) Nipype: a flexible, lightweight and extensible neuroimaging data
-processing framework in Python. Front. Neuroinform. 5:13.
-doi: 10.3389/fninf.2011.00013}
+\vspace{-3em}
+
+\ndcite{Gorgolewski K, Burns CD, Madison C, Clark D,
+  Halchenko YO, Waskom ML, Ghosh SS (2011) Nipype: a flexible,
+  lightweight and extensible neuroimaging data processing framework in
+  Python. Front. Neuroinform. 5:13.  doi: 10.3389/fninf.2011.00013}
 
 
 %___________________________________________________________________________
@@ -337,12 +341,12 @@ on neuroimaging.
 \includegraphics[width=\columnwidth]{pymvpa_shot.pdf}
 \ndcite{Hanke, M., Halchenko, Y. O., Sederberg, P. B., Hanson,
   S. J., Haxby, J. V.  \& Pollmann, S. (2009).
-  PyMVPA: A Python toolbox for multivariate pattern analysis of fMRI data. Neuroinformatics, 7}\\
-\ndcite{Haxby, J. V. , Guntupalli, J. S. , Connolly, A. C. ,
-  Halchenko, Y. O. , Conroy, B. R., Gobbini, M. I. , Hanke, M. and
-  Ramadge, P. J. (2011). A Common, High-Dimensional Model of the
-  Representational Space in Human Ventral Temporal Cortex. Neuron,
-  72.}
+  PyMVPA: A Python toolbox for multivariate pattern analysis of fMRI data. Neuroinformatics}\\
+%\ndcite{Haxby, J. V. , Guntupalli, J. S. , Connolly, A. C. ,
+%  Halchenko, Y. O. , Conroy, B. R., Gobbini, M. I. , Hanke, M. and
+%  Ramadge, P. J. (2011). A Common, High-Dimensional Model of the
+%  Representational Space in Human Ventral Temporal Cortex. Neuron,
+%  72.}
 
 %___________________________________________________________________________
 
@@ -353,7 +357,7 @@ to host heterogeneous tools dedicated to neuroimaging research. It aims at
 helping researchers in developing new neuroimaging tools, sharing data and
 distributing their software.
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item Written in pure Python
+%\item Written in pure Python
 \item Databasing capabilities
 \item Massive computation facilities using Soma-workflow
 \item Open environment, with many toolboxes
@@ -370,19 +374,19 @@ diffusion imaging and fibers tracking, surfacic and structural analysis,
 
 %___________________________________________________________________________
 
-\ndproject{AIMS}{http://brainvisa.info}{blank.png}{.2}{-1.25em}{0em}
-
-AIMS is the image processing library provided within the BrainVISA environment.
-It is independent from BrainVISA, and the basis for the Anatomist viewer.
-\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item C++ and Python APIs, including integration with Numpy arrays
-\item Open and plugin-based IO system supporting various volume formats (NIFTI-1,
-Analyze, DICOM, MINC, ECAT, and several others including all standard 2D
-image formats), several mesh and texture formats (GIFTI, PLY,
-% CIVET, BrainVisa Mesh and Tri, export as VRML-1, POV, 
-\ldots), graphs.
-\item Many neuromiaging data manipulation tools and image processing algorithms
-\end{itemize}
+% \ndproject{AIMS}{http://brainvisa.info}{blank.png}{.2}{-2.25em}{0em}
+% 
+% AIMS is the image processing library provided within the BrainVISA environment.
+% It is independent from BrainVISA, and the basis for the Anatomist viewer.
+% \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+% \item C++ and Python APIs, including integration with Numpy arrays
+% \item Open and plugin-based IO system supporting various volume formats (NIFTI-1,
+% Analyze, DICOM, MINC, ECAT, and several others including all standard 2D
+% image formats), several mesh and texture formats (GIFTI, PLY,
+% % CIVET, BrainVisa Mesh and Tri, export as VRML-1, POV, 
+% \ldots), graphs.
+% \item Many neuromiaging data manipulation tools and image processing algorithms
+% \end{itemize}
 
 %___________________________________________________________________________
 
@@ -431,9 +435,9 @@ neuroimaging.  It is cross-platform and open-source. It is an
 independent part of the BrainVisa environment, and relies on the AIMS
 library, inheriting its features.
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item C++ and Python APIs
+% \item C++ and Python APIs
 \item Interactive, fast 3D via direct OpenGL
-\item Usable as a standalone software or as a library to build dedicated GUIs
+\item Usable as a standalone software or as a library% to build dedicated GUIs
 \item Supports all kinds of neuroimaging objects, including complex structured
 objects
 \item Interactive ROI drawing, voxel-based or on surfaces
