@@ -231,6 +231,53 @@ available via NumPy arrays.
 
 %___________________________________________________________________________
 
+\ndproject{BrainVISA}{http://brainvisa.info}{brainvisa_logo.png}{.2}{-0.25em}{0em}
+
+BrainVISA is an open-source, modular and customizable software platform built
+to host heterogeneous tools dedicated to neuroimaging research. It aims at
+helping researchers in developing new neuroimaging tools, sharing data and
+distributing their software.
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+%\item Written in pure Python
+\item Databasing capabilities
+\item Massive computation facilities using Soma-workflow
+\item Open environment, with many toolboxes
+\item Specialized toolboxes for T1 MRI processing, sulci ang gyri morphometry,
+diffusion imaging and fibers tracking, surfacic and structural analysis,
+3D histology\ldots
+\item Links with other software like SPM, FSL, FreeSurfer, or CIVET
+\end{itemize}
+\includegraphics[width=0.9\columnwidth]{../pics/brainvisa_screenshot.png}
+\ndcite{D. Geffroy, D. Rivière, I. Denghien, N. Souedet,
+  S. Laguitton, and Y. Cointepas. BrainVISA: a complete software
+  platform for neuroimaging.  In Python in Neuroscience workshop,
+  Paris, Aug. 2011.}
+
+%___________________________________________________________________________
+
+\ndproject{DiPy}{http://nipy.org/dipy}{dipy-banner.png}{.5}{-0.25em}{-7.2em}
+
+Dipy is an international FOSS project for diffusion magnetic resonance
+imaging analysis.  Dipy is multiplatform and will run under any
+standard operating system such as \emph{Windows}, \emph{Linux},
+\emph{Mac OS X}.  Some of our \textbf{state-of-the-art} applications
+are:
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+\item Reconstruction algorithms e.g. GQI, DTI
+\item Tractography generation algorithms e.g. EuDX
+\item Intelligent downsampling of tracks
+\item Ultra fast tractography clustering
+\item Resampling datasets with anisotropic voxels to isotropic
+\item Visualizing multiple brains simultaneously
+\item Finding track correspondence between different brains
+\item Warping tractographies into another (e.g. MNI) space
+\item Support of various  file formats e.g. Trackvis or NIfTI
+%\item Dealing with huge tractographies without memory restrictions
+%\item Playing with datasets interactively without storing
+\end{itemize}
+
+%___________________________________________________________________________
+
 \ndproject{NiPy}{http://nipy.org/nipy}{blank.png}{.2}{-1.25em}{0em}
 
 NIPY provides a rich suite of algorithms for pre-processing and
@@ -281,30 +328,6 @@ Nipype allows you to
 
 %___________________________________________________________________________
 
-\ndproject{DiPy}{http://nipy.org/dipy}{dipy-banner.png}{.5}{-0.25em}{-7.2em}
-
-Dipy is an international FOSS project for diffusion magnetic resonance
-imaging analysis.  Dipy is multiplatform and will run under any
-standard operating system such as \emph{Windows}, \emph{Linux},
-\emph{Mac OS X}.  Some of our \textbf{state-of-the-art} applications
-are:
-\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item Reconstruction algorithms e.g. GQI, DTI
-\item Tractography generation algorithms e.g. EuDX
-\item Intelligent downsampling of tracks
-\item Ultra fast tractography clustering
-\item Resampling datasets with anisotropic voxels to isotropic
-\item Visualizing multiple brains simultaneously
-\item Finding track correspondence between different brains
-\item Warping tractographies into another (e.g. MNI) space
-\item Support of various  file formats e.g. Trackvis or NIfTI
-%\item Dealing with huge tractographies without memory restrictions
-%\item Playing with datasets interactively without storing
-\end{itemize}
-
-
-%___________________________________________________________________________
-
 \ndproject{NiTime}{http://nipy.org/nitime}{nitime_logo.pdf}{.3}{-1.25em}{-3em}
 
 Nitime is a library for time-series analysis of data from neuroscience
@@ -350,30 +373,6 @@ on neuroimaging.
 
 %___________________________________________________________________________
 
-\ndproject{BrainVISA}{http://brainvisa.info}{brainvisa_logo.png}{.2}{-0.25em}{0em}
-
-BrainVISA is an open-source, modular and customizable software platform built
-to host heterogeneous tools dedicated to neuroimaging research. It aims at
-helping researchers in developing new neuroimaging tools, sharing data and
-distributing their software.
-\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-%\item Written in pure Python
-\item Databasing capabilities
-\item Massive computation facilities using Soma-workflow
-\item Open environment, with many toolboxes
-\item Specialized toolboxes for T1 MRI processing, sulci ang gyri morphometry,
-diffusion imaging and fibers tracking, surfacic and structural analysis,
-3D histology\ldots
-\item Links with other software like SPM, FSL, FreeSurfer, or CIVET
-\end{itemize}
-\includegraphics[width=0.9\columnwidth]{../pics/brainvisa_screenshot.png}
-\ndcite{D. Geffroy, D. Rivière, I. Denghien, N. Souedet,
-  S. Laguitton, and Y. Cointepas. BrainVISA: a complete software
-  platform for neuroimaging.  In Python in Neuroscience workshop,
-  Paris, Aug. 2011.}
-
-%___________________________________________________________________________
-
 % \ndproject{AIMS}{http://brainvisa.info}{blank.png}{.2}{-2.25em}{0em}
 % 
 % AIMS is the image processing library provided within the BrainVISA environment.
@@ -415,19 +414,6 @@ Condor, \ldots) via DRMAA, or via the python API.
 \ndsection{Visualization}
 
 %___________________________________________________________________________
-
-\ndproject{PySurfer}{http://pysurfer.github.com}{pysurfer_logo.png}{.2}{-0.25em}{0em}
-
-PySurfer is a module for visualization and interaction with cortical
-surface representations of neuroimaging data from Freesurfer. It
-extends Mayavi’s powerful visualization engine with a high-level
-interface for working with MRI and MEG data.  PySurfer offers both a
-command-line interface designed to broadly replicate Freesurfer’s
-Tksurfer program as well as a Python library for writing scripts to
-efficiently explore complex datasets.
-
-%___________________________________________________________________________
-
 \ndproject{Anatomist}{http://brainvisa.info}{anatomist.png}{.2}{-0.25em}{0em}
 
 Anatomist is a powerful 3D visualization software dedicated to
@@ -446,6 +432,20 @@ objects
   Y. Cointepas.  Anatomist: a python framework for interactive 3D
   visualization of neuroimaging data. In Python in Neuroscience
   workshop, 2011}
+
+
+\ndproject{PySurfer}{http://pysurfer.github.com}{pysurfer_logo.png}{.2}{-0.25em}{0em}
+
+PySurfer is a module for visualization and interaction with cortical
+surface representations of neuroimaging data from Freesurfer. It
+extends Mayavi’s powerful visualization engine with a high-level
+interface for working with MRI and MEG data.  PySurfer offers both a
+command-line interface designed to broadly replicate Freesurfer’s
+Tksurfer program as well as a Python library for writing scripts to
+efficiently explore complex datasets.
+
+%___________________________________________________________________________
+
 \end{multicols}
 \end{document}
 
