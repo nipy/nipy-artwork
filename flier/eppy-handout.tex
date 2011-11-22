@@ -1,0 +1,89 @@
+\include{common-handout}
+
+\hypersetup{
+  pdftitle={Python in Electrophysiology},
+}
+
+%%% Body
+\begin{document}
+
+\begin{multicols}{3}    % 3 columns
+
+% Document title
+%\section*{
+\begin{center}\Large \textbf{Python in Electrophysiology}\end{center}
+%}
+%\label{python-in-neuroimaging}
+
+\begin{center}
+\noindent
+%% yoh: what logo?  worse comes to worse we could reuse snakebrain in
+%%      different colorscheme ;)
+\includegraphics[width=0.5\columnwidth]{snakebrain}
+%\includegraphics[width=0.5\columnwidth]{openlogo-vsop}
+
+Find the community @ \url{http://http://neuralensemble.org}
+
+%% yoh: or what should be(come) the canonical location?
+%%      or should we (you) come up with one?
+
+% \hrule
+\end{center}
+\vspace{0em}
+
+
+%___________________________________________________________________________
+%% yoh: what sections do you foresee?  Below see my blunt dump of ideas
+%%      or may be there should be no sections at all?
+
+\ndsection{Data I/O}
+
+%___________________________________________________________________________
+
+% Your logo placed under ../pics called as <project>_logo.svg
+% .svg is preferable, otherwise some other vector (.pdf) or even
+% raster (.png) would suffice
+\ndproject{XXX}{http://example.org}{opensesame_logo.pdf}{.2}{-0.25em}{0em}
+
+%\begin{figure}
+%\includegraphics[width=0.3\columnwidth]{../pics/psychopy_logo.pdf}
+%\end{figure}
+
+Brief description.
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+\item The
+\item most
+\item interesting
+\item and
+\item methodology
+\item oriented
+\item features
+\item ideally with limited selection of citations
+\end{itemize}
+% Your favorite screenshot placed under ../pics/
+% named as <project>_screenshot.png (optional numbers in suffixes if
+% you have multiple to choose from)
+\includegraphics[width=\columnwidth]{opensesame_screenshot1.png}
+% Selected set of citations, Here is an example:
+\ndcite{D. Geffroy, D. Rivière, I. Denghien, N. Souedet,
+  S. Laguitton, and Y. Cointepas. BrainVISA: a complete software
+  platform for neuroimaging.  In Python in Neuroscience workshop,
+  Paris, Aug. 2011.}
+
+%___________________________________________________________________________
+
+\ndsection{Data Archiving}
+\ndsection{Experimentation Control}
+\ndsection{Analysis}%
+\ndsection{Closed-loop Frameworks}%
+
+
+\end{multicols}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-PDF-mode: t
+%%% whizzy-viewers: (("-pdf" "okular") ("-dvi" "xdvi") ("-ps" "gv"))
+%%% End:

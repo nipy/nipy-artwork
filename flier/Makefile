@@ -1,4 +1,4 @@
-all: pics nipy-handout.pdf
+all: pics nipy-handout.pdf eppy-handout.pdf
 #	rst2pdf materials.rst
 
 pics:
