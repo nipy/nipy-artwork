@@ -5,7 +5,7 @@ pics:
 	$(MAKE) -C ../pics psychopy_logo.pdf opensesame_logo.pdf snakebrain.pdf
 	$(MAKE) -C ../pics
 
-%.pdf: %.tex
+%-handout.pdf: %-handout.tex common-handout.tex
 	pdflatex $<
 
 nipy-handout.tex: materials.rst
