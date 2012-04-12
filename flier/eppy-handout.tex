@@ -1,3 +1,4 @@
+
 \include{common-handout}
 
 \hypersetup{
@@ -22,7 +23,7 @@
 \includegraphics[width=0.5\columnwidth]{snakebrain}
 %\includegraphics[width=0.5\columnwidth]{openlogo-vsop}
 
-Find the community @ \url{http://http://neuralensemble.org}
+Find the community @ \url{http://neuralensemble.org}
 
 %% yoh: or what should be(come) the canonical location?
 %%      or should we (you) come up with one?
@@ -51,12 +52,9 @@ Find the community @ \url{http://http://neuralensemble.org}
 
 Brief description.
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item The
-\item most
-\item interesting
+\item The most interesting
 \item and
-\item methodology
-\item oriented
+\item methodology oriented
 \item features
 \item ideally with limited selection of citations
 \end{itemize}
@@ -70,8 +68,40 @@ Brief description.
   platform for neuroimaging.  In Python in Neuroscience workshop,
   Paris, Aug. 2011.}
 
-%___________________________________________________________________________
 
+\ndproject{Neuroshare Tools}{http://g-node.org/neuroshare-tools}{neurosharelogo_square.png}{.2}{-0.25em}{0em}
+
+Neuroshare is a standardized API for accessing neurophysiology
+data stored in vendor-specific binary formats in a vendor-neutral
+way. The G-Node Neuroshare Tools provide libraries and utilities
+built on Neuroshare and Python to work with Neuroshare compatible
+files on various platforms.
+
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+\item High-level Python library to access Neuroshare compatible data-files
+\item Automatically detects file types and loads the corresponding vendor library
+\item Support for GNU/Linux, MacOS~X, and Windows
+\item Neuroshare-WineProxy enables the use of vendor libraries for Windows under GNU/Linux and MacOS~X
+\item Comes with a tool to convert any data file supported by Neuroshare to the HDF5 format
+\end{itemize}
+
+
+%___________________________________________________________________________
+\ndsection{Metadata Management}%
+
+\ndproject{odML libraries \& Editor}{http://www.g-node.org/odml/}{odml_logo.pdf}{.2}{-0.25em}{0em}
+
+Use the {open metadata Markup Language} to annotate data with information about the stimulus, data acquisition, and experimental conditions.
+
+\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+\item Developer friendly libraries for Python and Java
+\item Fully functional graphical editor for Linux, Windows, and MacOS~X
+\item Support for the latest odML specification
+\end{itemize}
+
+\includegraphics[width=\columnwidth]{odml_editor_screenshot.png}
+
+\ndcite{Grewe J, Wachtler T, Benda J (2011) A bottom-up approach to data annotation in neurophysiology. Front. Neuroinform. 5:16. doi:~10.3389/fninf.2011.00016\\}
 \ndsection{Data Archiving}
 \ndsection{Experimentation Control}
 \ndsection{Analysis}%
@@ -106,7 +136,6 @@ Visualise and quantify electrophysiological data.
 %___________________________________________________________________________
 
 \ndsection{Closed-loop Frameworks}%
-
 
 \end{multicols}
 \end{document}
