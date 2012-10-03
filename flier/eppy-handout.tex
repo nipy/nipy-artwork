@@ -41,32 +41,32 @@ Find the community @ \url{http://neuralensemble.org}
 
 %___________________________________________________________________________
 
-% Your logo placed under ../pics called as <project>_logo.svg
-% .svg is preferable, otherwise some other vector (.pdf) or even
-% raster (.png) would suffice
-\ndproject{XXX}{http://example.org}{opensesame_logo.pdf}{.2}{-0.25em}{0em}
-
-%\begin{figure}
-%\includegraphics[width=0.3\columnwidth]{../pics/psychopy_logo.pdf}
-%\end{figure}
-
-Brief description.
-\begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item The most interesting
-\item and
-\item methodology oriented
-\item features
-\item ideally with limited selection of citations
-\end{itemize}
-% Your favorite screenshot placed under ../pics/
-% named as <project>_screenshot.png (optional numbers in suffixes if
-% you have multiple to choose from)
-\includegraphics[width=\columnwidth]{opensesame_screenshot1.png}
-% Selected set of citations, Here is an example:
-\ndcite{D. Geffroy, D. Rivière, I. Denghien, N. Souedet,
-  S. Laguitton, and Y. Cointepas. BrainVISA: a complete software
-  platform for neuroimaging.  In Python in Neuroscience workshop,
-  Paris, Aug. 2011.}
+% % Your logo placed under ../pics called as <project>_logo.svg
+% % .svg is preferable, otherwise some other vector (.pdf) or even
+% % raster (.png) would suffice
+% \ndproject{XXX}{http://example.org}{opensesame_logo.pdf}{.2}{-0.25em}{0em}
+% 
+% %\begin{figure}
+% %\includegraphics[width=0.3\columnwidth]{../pics/psychopy_logo.pdf}
+% %\end{figure}
+% 
+% Brief description.
+% \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
+% \item The most interesting
+% \item and
+% \item methodology oriented
+% \item features
+% \item ideally with limited selection of citations
+% \end{itemize}
+% % Your favorite screenshot placed under ../pics/
+% % named as <project>_screenshot.png (optional numbers in suffixes if
+% % you have multiple to choose from)
+% \includegraphics[width=\columnwidth]{opensesame_screenshot1.png}
+% % Selected set of citations, Here is an example:
+% \ndcite{D. Geffroy, D. Rivière, I. Denghien, N. Souedet,
+%   S. Laguitton, and Y. Cointepas. BrainVISA: a complete software
+%   platform for neuroimaging.  In Python in Neuroscience workshop,
+%   Paris, Aug. 2011.}
 
 
 \ndproject{Neuroshare Tools}{http://g-node.org/neuroshare-tools}{neurosharelogo_square.png}{.2}{-0.25em}{0em}
@@ -85,40 +85,48 @@ files on various platforms.
 \item Comes with a tool to convert any data file supported by Neuroshare to the HDF5 format
 \end{itemize}
 
+\vspace{1em}
 %_________________________________neo_______________________________________
-\ndproject{Neo}{http://packages.python.org/neo/}{neo_logo.pdf}{.4}{-0.25em}{0em}
+\ndproject{Neo}{http://packages.python.org/neo}{neo_logo.pdf}{.4}{-0.25em}{-5em}
 
-Neo is a package for representing electrophysiology data in Python, together with support
-for reading a wide range of neurophysiology file formats, including Spike2, NeuroExplorer,
-AlphaOmega, Axon, Blackrock, Plexon, Tdt, and support for writing to a subset of these
-formats plus non-proprietary formats including HDF5.
+Neo is a package provides a common model for representing
+electrophysiology data in Python. It provides I/O for reading a wide
+range of neurophysiology file formats, including Spike2,
+NeuroExplorer, AlphaOmega, Axon, Blackrock, Plexon, Tdt, and for
+writing to a subset of these formats plus non-proprietary formats
+including HDF5.
 
-The goal of Neo is to improve interoperability between Python tools for analyzing, visualizing
-and generating electrophysiology data (such as OpenElectrophy, NeuroTools, G-node,
-Helmholtz, PyNN) by providing a common, shared object model. In order to be as
-lightweight a dependency as possible, Neo is deliberately limited to represention of data,
-with no functions for data analysis or visualization.
+% The goal of Neo is to improve interoperability between Python tools for analyzing, visualizing
+% and generating electrophysiology data (such as OpenElectrophy, NeuroTools, G-node,
+% Helmholtz, PyNN) by providing a common, shared object model. In order to be as
+% lightweight a dependency as possible, Neo is deliberately limited to represention of data,
+% with no functions for data analysis or visualization.
 
-Neo implements a hierarchical data model well adapted to intracellular and extracellular
-electrophysiology and EEG data with support for multi-electrodes (for example tetrodes).
-Neo's data objects build on the quantities package, which in turn builds on NumPy by 
-adding support for physical dimensions. Thus Neo objects behave just like normal NumPy arrays,
-but with additional metadata, checks for dimensional consistency and automatic unit conversion.
+Neo implements a hierarchical data model well adapted to intracellular
+and extracellular electrophysiology and EEG data with support for
+multi-electrodes (for example tetrodes).  Neo's data objects build on
+the \href{http://pypi.python.org/pypi/quantities}{quantities} package,
+which in turn builds on \href{http://www.numpy.org}{NumPy} by adding
+support for physical dimensions. Thus Neo objects behave just like
+normal NumPy arrays, but with additional metadata, checks for
+dimensional consistency and automatic unit conversion.
 
-A project with similar aims but for neuroimaging file formats is NiBabel.
+A project with similar aims but for neuroimaging file formats is
+\href{http://www.nipy.org/nibabel}{NiBabel}.
 
 
 %____________________OpenElectrophy______________________________________
 
-\ndproject{OpenElectrophy}{http://packages.python.org/OpenElectrophy/}{OpenElectrophy_logo.png}{.2}{-0.25em}{0em}
+%\ndproject{OpenElectrophy}{http://packages.python.org/OpenElectrophy/}{OpenElectrophy_logo.png}{.4}{-0.25em}{-5em}
+\ndproject{OpenElectrophy}{http://packages.python.org/OpenElectrophy}{OpenElectrophy_icon.png}{.18}{-0.25em}{0em}
 
-OpenElectrophy is build on top of neo.
+OpenElectrophy is build on top of neo.  It provides
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item A GUI on top of neo.
-\item A collection of method for spike sorting and powerfull GUI.
-\item A wavelet method for analysing transient oscillations in LFP.
-\item A customisable database to organize datasets.
+\item Powerfull GUI
+\item Collection of methods for spike sorting
+\item Wavelet method for analysing transient oscillations in LFP
+\item Customisable database to organize datasets
 \end{itemize}
 
 %___________________________________________________________________________
@@ -203,12 +211,12 @@ in Python. It features manual and automatic clustering, many data
 formats and it is memory-efficient. Truely Open Source, BSD-licensed.
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item user-friendly and customisable,
-\item interactive command-line interface in Python,
-\item graphical-user interface and visualization widgets,
-\item automatic and manual clustering,
-\item support for multi-channel data,
-\item based on: NumPy, PyTables, matplotlib, scikit-learn
+\item User-friendly and customisable
+\item Interactive command-line interface in Python
+\item GUI and visualization widgets
+\item Automatic and manual clustering
+\item Support for multi-channel data
+\item Based on: NumPy, PyTables, matplotlib, scikit-learn
 \end{itemize}
 %___________________________________________________________________________
 
