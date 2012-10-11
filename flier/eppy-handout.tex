@@ -1,6 +1,8 @@
 
 \include{common-handout}
 
+\raggedcolumns
+
 \hypersetup{
   pdftitle={Python in Electrophysiology},
 }
@@ -133,6 +135,7 @@ OpenElectrophy is build on top of neo.  It provides
 
 %___________________________________________________________________________
 
+
 %___________________________________________________________________________
 \ndsection{Metadata Management}%
 
@@ -149,8 +152,34 @@ Use the {open metadata Markup Language} to annotate data with information about 
 \includegraphics[width=\columnwidth]{odml_editor_screenshot.png}
 
 \ndcite{Grewe J, Wachtler T, Benda J (2011) A bottom-up approach to data annotation in neurophysiology. Front. Neuroinform. 5:16. doi:~10.3389/fninf.2011.00016\\}
-\ndsection{Data Archiving}
-\ndsection{Experimentation Control}
+%\ndsection{Data Archiving}
+%\ndsection{Experimentation Control}
+
+\ndsection{Simulation Tools}
+
+%________________________LFPy_______________________________________________
+
+\ndproject{LFPy}{http://compneuro.umb.no/LFPy}{lfpy_logo.pdf}{.3}{-0.25em}{-3em}
+
+\vspace{0.5em}                  %some additional spacing
+LFPy is a Python module for simulation of extracellular electrical
+potentials evoked by activity of multi-compartment model neurons.
+LFPy runs on top of the NEURON-simulator, using the Python interface
+that is included (\url{http://www.neuron.yale.edu}).
+
+LFPy provides:
+\begin{itemize}[nolistsep, topsep=0em, leftmargin=1pc]
+\item A forward modeling scheme for calculating extracellular potentials from compartmental membrane currents in an infinite homogeneous linear extracellular medium.
+\item Simple to use Python-classes for setting up the cells, synapses and recording electrodes.
+\item Easy to use scripting capabilities thanks to NEURON and the Python programming environment.
+\item Functionality to employ or specify biophysically detailed model neurons, add stimulus, and perform simultaneous simulation of the model cell responses and extracellular potentials.
+\item Support for common formats for reconstructed neuronal morphologies, allowing use of publicly available 3D-reconstructions (e.g., \url{http://www.neuromorpho.org}). 
+\end{itemize}
+
+
+%___________________________________________________________________________
+
+\columnbreak
 \ndsection{Analysis}%
 
 %________________________Stimfit____________________________________________
@@ -179,6 +208,8 @@ Visualise and quantify electrophysiological data.
 \includegraphics[width=\columnwidth]{stimfit_screenshot.png}
 % Selected set of citations, Here is an example:
 % Working on a manuscript right now ;-)
+
+\columnbreak
 
 %________________________Spyke Viewer_______________________________________
 
@@ -223,35 +254,9 @@ formats and it is memory-efficient. Truely Open Source, BSD-licensed.
 %___________________________________________________________________________
 
 \includegraphics[width=\columnwidth]{spikesort_screenshot.png}
-\ndsection{Closed-loop Frameworks}%
+%\ndsection{Closed-loop Frameworks}%
 
 %___________________________________________________________________________
-
-
-\ndsection{Simulation Tools}
-
-%________________________LFPy_______________________________________________
-
-\ndproject{LFPy}{http://compneuro.umb.no/LFPy}{lfpy_logo.pdf}{.3}{-0.25em}{-3em}
-
-\vspace{0.5em}                  %some additional spacing
-LFPy is a Python module for simulation of extracellular electrical
-potentials evoked by activity of multi-compartment model neurons.
-LFPy runs on top of the NEURON-simulator, using the Python interface
-that is included (\url{http://www.neuron.yale.edu}).
-
-LFPy provides:
-\begin{itemize}[nolistsep, topsep=0em, leftmargin=1pc]
-\item A forward modeling scheme for calculating extracellular potentials from compartmental membrane currents in an infinite homogeneous linear extracellular medium.
-\item Simple to use Python-classes for setting up the cells, synapses and recording electrodes.
-\item Easy to use scripting capabilities thanks to NEURON and the Python programming environment.
-\item Functionality to employ or specify biophysically detailed model neurons, add stimulus, and perform simultaneous simulation of the model cell responses and extracellular potentials.
-\item Support for common formats for reconstructed neuronal morphologies, allowing use of publicly available 3D-reconstructions (e.g., \url{http://www.neuromorpho.org}). 
-\end{itemize}
-
-
-%___________________________________________________________________________
-
 
 
 
