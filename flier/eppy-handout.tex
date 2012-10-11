@@ -127,10 +127,11 @@ OpenElectrophy is build on top of neo.  It provides
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Powerful GUI
 \item Collection of methods for spike sorting
-\item Wavelet method for analyzing transient oscillations in LFP
+\item Wavelet method for LFP transient oscillations analysis
 \item Customisable database to organize datasets
 \end{itemize}
 
+\vspace{0.5em}
 \includegraphics[width=\columnwidth]{OpenElectrophy_screenshot1.png}
 
 %___________________________________________________________________________
@@ -138,22 +139,26 @@ OpenElectrophy is build on top of neo.  It provides
 
 %________________________G-Node Data API Python Client______________________
 \ndsection{Data Management}
-\ndproject{G-Node Data API Python Client}{http://g-node.github.com/python-gnode-client}{gnode_logo.pdf}{.25}{-0.25em}{0em}
 
-G-Node provides a free cloud-based service neuroscientists can use for storage, management and sharing of data (\url{https://portal.g-node.org/data/}). An API for data access is provided (\url{http://g-node.github.com/g-node-portal/}), allowing developers to code their own client. A web-based interface as well as a client for MATLAB\textregistered  (\url{http://g-node.github.com/gnode-client-matlab/}) are already provided. A client for Python is currently under development. When completed it shall provide:
+%\ndproject{G-Node Data API Python Client}{http://g-node.github.com/python-gnode-client}{gnode_logo.pdf}{.25}{-0.25em}{0em}
+\ndproject{G-Node Data API Python Client}{http://g-node.github.com}{gnode_logo.pdf}{.25}{-0em}{-1.5em}
+
+\vspace{0.5em}
+
+G-Node provides a free cloud-based service neuroscientists can use for storage, management and sharing of data (\url{https://portal.g-node.org/data/}). An API for data access is provided (\url{http://g-node.github.com/g-node-portal/}), allowing developers to code their own clients. A web-based interface as well as a client for MATLAB$^\textregistered$  (\url{http://g-node.github.com/gnode-client-matlab/}) are already provided. A client for Python is currently under development. When completed it shall provide:
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Compatibility with NEO: use it 'out-of-the-box' with existing code written for NEO and gain additional services provided by the G-Node 'for free'
 \item Smart lazy loading and caching for frugal bandwidth and memory usage
-\item Possibility to work in a mixed workflow: work on the same data on Python and MATLAB\textregistered 
+\item Possibility to work in a mixed workflow: work on the same data in Python and MATLAB$^\textregistered$
 \end{itemize}
 
-Stay tunned for development updates!
+Stay tuned for development updates!
 
 %___________________________________________________________________________
 \ndsection{Metadata Management}%
 
-\ndproject{odML libraries \& Editor}{http://www.g-node.org/odml/}{odml_logo.pdf}{.2}{-0.25em}{0em}
+\ndproject{odML libraries \& Editor}{http://www.g-node.org/odml/}{odml_logo.pdf}{.2}{-0.45em}{0em}
 
 Use the {open metadata Markup Language} to annotate data with information about the stimulus, data acquisition, and experimental conditions.
 
@@ -163,6 +168,7 @@ Use the {open metadata Markup Language} to annotate data with information about 
 \item Support for the latest odML specification
 \end{itemize}
 
+\vspace{0.5em}
 \includegraphics[width=\columnwidth]{odml_editor_screenshot.png}
 
 \ndcite{Grewe J, Wachtler T, Benda J (2011) A bottom-up approach to data annotation in neurophysiology. Front. Neuroinform. 5:16. doi:~10.3389/fninf.2011.00016\\}
@@ -193,7 +199,6 @@ LFPy provides:
 
 %___________________________________________________________________________
 
-\columnbreak
 \ndsection{Analysis}%
 
 %________________________Stimfit____________________________________________
@@ -216,9 +221,8 @@ Visualize and quantify electrophysiological data.
 \item Extracts spontaneous and evoked events
 \item Successfully used in many publications for >\,5 years
 \end{itemize}
-% Your favorite screenshot placed under ../pics/
-% named as <project>_screenshot.png (optional numbers in suffixes if
-% you have multiple to choose from)
+
+\vspace{1em}
 \includegraphics[width=\columnwidth]{stimfit_screenshot.png}
 % Selected set of citations, Here is an example:
 % Working on a manuscript right now ;-)
@@ -240,15 +244,15 @@ Navigate, visualize and analyze electrophysiological data. Designed to be flexib
 \item Easily extensible: Create useful plugins in minutes
 \item Use supplied plugins for common plots such as Raster Plot, PSTH, Correlogram and analog signals
 \end{itemize}
-% Your favorite screenshot placed under ../pics/
-% named as <project>_screenshot.png (optional numbers in suffixes if
-% you have multiple to choose from)
+
+\vspace{1em}
 \includegraphics[width=\columnwidth]{spykeviewer_screenshot.png}
 % Selected set of citations, Here is an example:
 % No publication yet...
 
 %___________________________________________________________________________
 
+\columnbreak
 
 %________________________SpikeSort____________________________________________
 \ndproject{SpikeSort}{http://spikesort.org}{spikesort_logo.pdf}{.2}{-0.25em}{0em}
@@ -267,6 +271,7 @@ formats and it is memory-efficient. Truely Open Source, BSD-licensed.
 \end{itemize}
 %___________________________________________________________________________
 
+\vspace{1em}
 \includegraphics[width=\columnwidth]{spikesort_screenshot.png}
 %\ndsection{Closed-loop Frameworks}%
 
