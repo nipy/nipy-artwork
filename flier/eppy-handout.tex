@@ -91,10 +91,10 @@ files on various platforms.
 %_________________________________neo_______________________________________
 \ndproject{Neo}{http://packages.python.org/neo}{neo_logo.pdf}{.4}{-0.25em}{-5em}
 
-Neo is a package provides a common model for representing
+Neo provides a common model for representing
 electrophysiology data in Python. It provides I/O for reading a wide
-range of neurophysiology file formats, including Spike2,
-NeuroExplorer, AlphaOmega, Axon, Blackrock, Plexon, Tdt, and for
+range of neurophysiology file formats (Spike2,
+NeuroExplorer, AlphaOmega, Axon, Blackrock, Plexon, Tdt) and for
 writing to a subset of these formats plus non-proprietary formats
 including HDF5.
 
@@ -104,13 +104,13 @@ including HDF5.
 % lightweight a dependency as possible, Neo is deliberately limited to represention of data,
 % with no functions for data analysis or visualization.
 
-Neo implements a hierarchical data model well adapted to intracellular
+Neo implements a hierarchical data model well-adapted to intracellular
 and extracellular electrophysiology and EEG data with support for
-multi-electrodes (for example tetrodes).  Neo's data objects build on
+multi-electrodes (e.g., tetrodes).  Neo's data objects build on
 the \href{http://pypi.python.org/pypi/quantities}{quantities} package,
 which in turn builds on \href{http://www.numpy.org}{NumPy} by adding
-support for physical dimensions. Thus Neo objects behave just like
-normal NumPy arrays, but with additional metadata, checks for
+support for physical dimensions. Thus Neo objects behave like
+normal NumPy arrays but with additional metadata, checks for
 dimensional consistency and automatic unit conversion.
 
 A project with similar aims but for neuroimaging file formats is
@@ -125,9 +125,9 @@ A project with similar aims but for neuroimaging file formats is
 OpenElectrophy is build on top of neo.  It provides
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item Powerfull GUI
+\item Powerful GUI
 \item Collection of methods for spike sorting
-\item Wavelet method for analysing transient oscillations in LFP
+\item Wavelet method for analyzing transient oscillations in LFP
 \item Customisable database to organize datasets
 \end{itemize}
 
@@ -164,15 +164,15 @@ Use the {open metadata Markup Language} to annotate data with information about 
 \vspace{0.5em}                  %some additional spacing
 LFPy is a Python module for simulation of extracellular electrical
 potentials evoked by activity of multi-compartment model neurons.
-LFPy runs on top of the NEURON-simulator, using the Python interface
-that is included (\url{http://www.neuron.yale.edu}).
+LFPy runs on top of the NEURON-simulator, using the included Python interface
+(\url{http://www.neuron.yale.edu}).
 
 LFPy provides:
 \begin{itemize}[nolistsep, topsep=0em, leftmargin=1pc]
 \item A forward modeling scheme for calculating extracellular potentials from compartmental membrane currents in an infinite homogeneous linear extracellular medium.
-\item Simple to use Python-classes for setting up the cells, synapses and recording electrodes.
+\item Simple to use Python-classes for setting up cells, synapses and recording electrodes.
 \item Easy to use scripting capabilities thanks to NEURON and the Python programming environment.
-\item Functionality to employ or specify biophysically detailed model neurons, add stimulus, and perform simultaneous simulation of the model cell responses and extracellular potentials.
+\item Functionality to employ or specify biophysically detailed model neurons, add a stimulus, and perform a simultaneous simulation of the model cell responses and extracellular potentials.
 \item Support for common formats for reconstructed neuronal morphologies, allowing use of publicly available 3D-reconstructions (e.g., \url{http://www.neuromorpho.org}). 
 \end{itemize}
 
@@ -193,13 +193,13 @@ LFPy provides:
 %\includegraphics[width=0.3\columnwidth]{../pics/psychopy_logo.pdf}
 %\end{figure}
 
-Visualise and quantify electrophysiological data.
+Visualize and quantify electrophysiological data.
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item With a focus on patch-clamp recordings
 \item Supports most standard patch-clamp file types
 \item Embedded Python shell
-\item Measure action potential, EPSC and EPSP kinetics
-\item Extract spontaneous and evoked events
+\item Measures action potential, EPSC and EPSP kinetics
+\item Extracts spontaneous and evoked events
 \item Successfully used in many publications for >\,5 years
 \end{itemize}
 % Your favorite screenshot placed under ../pics/
