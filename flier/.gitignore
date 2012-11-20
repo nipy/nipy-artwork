@@ -1,1 +1,6 @@
 materials.pdf
+
+# LaTeX
+*.aux
+*.log
+*.out
