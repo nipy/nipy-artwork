@@ -165,7 +165,7 @@ Use the {open metadata Markup Language} to annotate data with information about 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item Developer friendly libraries for Python and Java
 \item Fully functional graphical editor for Linux, Windows, and MacOS~X
-\item Support for the latest odML specification
+%\item Support for the latest odML specification
 \end{itemize}
 
 \vspace{0.5em}
@@ -189,11 +189,19 @@ LFPy runs on top of the NEURON-simulator, using the included Python interface
 
 LFPy provides:
 \begin{itemize}[nolistsep, topsep=0em, leftmargin=1pc]
-\item A forward modeling scheme for calculating extracellular potentials from compartmental membrane currents in an infinite homogeneous linear extracellular medium.
-\item Simple to use Python-classes for setting up cells, synapses and recording electrodes.
-\item Easy to use scripting capabilities thanks to NEURON and the Python programming environment.
-\item Functionality to employ or specify biophysically detailed model neurons, add a stimulus, and perform a simultaneous simulation of the model cell responses and extracellular potentials.
-\item Support for common formats for reconstructed neuronal morphologies, allowing use of publicly available 3D-reconstructions (e.g., \url{http://www.neuromorpho.org}). 
+\item A forward modeling scheme for calculating extracellular
+  potentials from compartmental membrane currents in an infinite
+  homogeneous linear extracellular medium
+\item Python-classes for setting up cells, synapses and recording
+  electrodes
+\item Scripting capabilities thanks to NEURON and the
+  Python programming environment
+\item Simultaneous simulation of the model cell responses and
+  extracellular potentials based on a biophysically detailed neuronal
+  model
+\item Support for common formats for reconstructed neuronal
+  morphologies, allowing use of publicly available 3D-reconstructions
+  (\emph{e.g.}, \url{http://www.neuromorpho.org}).
 \end{itemize}
 
 
@@ -214,20 +222,22 @@ LFPy provides:
 MNE is a software package for processing magnetoencephalography (MEG) and electroencephalography (EEG) data.
 (\url{http://www.martinos.org/mne})
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item Includes MEG and EEG preprocessing tools
-\item Includes various data conditioning and data conversion utilities.
+%\item MEG and EEG preprocessing tools
+\item Data conditioning and data conversion utilities
 \item Interactive and batch-mode modules for the forward and inverse calculations
-\item Computes cortically-constrained source estimates
-\item Computes associated dynamic statistical parametric maps, optionally constrained by fMRI
-\item Includes frequency-domain and time-frequency analyses and non-parametric statistics
-\item Includes multi-variate statistics (decoding)
+\item Cortically-constrained source estimates
+\item Associated dynamic statistical parametric maps, optionally constrained by fMRI
+\item Frequency-domain and time-frequency analyses, non-parametric
+  statistics, multivariate decoding
 \end{itemize}
 
 \vspace{1em}
 \includegraphics[width=\columnwidth]{mne_screenshot.pdf}
 % Selected set of citations, Here is an example:
-\ndcite{A. Gramfort, M. Luessi, E. Larson, D. Engemann, D. Strohmeier, C. Brodbeck, L. Parkkonen, M. Hämäläinen, MNE software for processing MEG and EEG data, NeuroImage, Volume 86, 1 February 2014, Pages 446-460, ISSN 1053-8119, http://dx.doi.org/10.1016/j.neuroimage.2013.10.027}
-\ndcite{A. Gramfort, M. Luessi, E. Larson, D. Engemann, D. Strohmeier, C. Brodbeck, R. Goj, M. Jas, T. Brooks, L. Parkkonen, M. Hämäläinen, MEG and EEG data analysis with MNE-Python, Frontiers in Neuroscience, Volume 7, 2013, ISSN 1662-453X, http://dx.doi.org/10.3389/fnins.2013.00267}
+\ndcite{A. Gramfort, \emph{et.~al.}
+%  M. Luessi, E. Larson, D. Engemann, D. Strohmeier, C. Brodbeck, L. Parkkonen, M. Hämäläinen,
+MNE software for processing MEG and EEG data, NeuroImage, Volume 86, 1 February 2014, Pages 446-460, ISSN 1053-8119, http://dx.doi.org/10.1016/j.neuroimage.2013.10.027}
+% \ndcite{A. Gramfort, M. Luessi, E. Larson, D. Engemann, D. Strohmeier, C. Brodbeck, R. Goj, M. Jas, T. Brooks, L. Parkkonen, M. Hämäläinen, MEG and EEG data analysis with MNE-Python, Frontiers in Neuroscience, Volume 7, 2013, ISSN 1662-453X, http://dx.doi.org/10.3389/fnins.2013.00267}
 
 
 %________________________Stimfit____________________________________________
@@ -320,7 +330,7 @@ ACQ4 is a complete software system for data acquisition and analysis in neurophy
 \item Live camera viewing for patching and online analysis of calcium imaging
 \item Modular and scalable design -- easy to expand support for new hardware and experiments
 \item Integrated data manager for hierarchical data storage with annotations and other metadata
-\item Includes extensive set of analysis tools
+%\item Includes extensive set of analysis tools
 \end{itemize}
 
 \vspace{1em}
