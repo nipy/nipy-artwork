@@ -75,9 +75,10 @@ Find the community @ \url{http://neuralensemble.org}
 
 Neuroshare is a standardized API for accessing neurophysiology
 data stored in vendor-specific binary formats in a vendor-neutral
-way. The G-Node Neuroshare Tools provide libraries and utilities
-built on Neuroshare and Python to work with Neuroshare compatible
-files on various platforms.
+way.
+% The G-Node Neuroshare Tools provide libraries and utilities
+%built on Neuroshare and Python to work with Neuroshare compatible
+%files on various platforms.
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
 \item High-level Python library to access Neuroshare compatible data-files
@@ -145,15 +146,24 @@ OpenElectrophy is build on top of neo.  It provides
 
 \vspace{0.5em}
 
-G-Node provides a free cloud-based service neuroscientists can use for storage, management and sharing of data (\url{https://portal.g-node.org/data/}). An API for data access is provided (\url{http://g-node.github.com/g-node-portal/}), allowing developers to code their own clients. A web-based interface as well as a client for MATLAB$^\textrm{\textregistered}$  (\url{http://g-node.github.com/gnode-client-matlab/}) are already provided. A client for Python is currently under development. When completed it shall provide:
+G-Node provides a free cloud-based service neuroscientists can use for
+storage, management and sharing of data
+(\url{https://portal.g-node.org/data/}). An API for data access is
+provided (\url{http://g-node.github.com/g-node-portal/}), allowing
+developers to code their own clients.
+% A web-based interface as well as a client for
+% MATLAB$^\textrm{\textregistered}$
+% (\url{http://g-node.github.com/gnode-client-matlab/}) are already
+% provided. 
+A client for Python is currently under development: %. When completed it shall provide:
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item Compatibility with NEO: use it 'out-of-the-box' with existing code written for NEO and gain additional services provided by the G-Node 'for free'
+\item Compatibility with NEO%: use it 'out-of-the-box' with existing code written for NEO and gain additional services provided by the G-Node 'for free'
 \item Smart lazy loading and caching for frugal bandwidth and memory usage
 \item Possibility to work in a mixed workflow: work on the same data in Python and MATLAB$^\textrm{\textregistered}$
 \end{itemize}
 
-Stay tuned for development updates!
+%Stay tuned for development updates!
 
 %___________________________________________________________________________
 \ndsection{Metadata Management}%
@@ -184,16 +194,16 @@ Use the {open metadata Markup Language} to annotate data with information about 
 \vspace{0.5em}                  %some additional spacing
 LFPy is a Python module for simulation of extracellular electrical
 potentials evoked by activity of multi-compartment model neurons.
-LFPy runs on top of the NEURON-simulator, using the included Python interface
-(\url{http://www.neuron.yale.edu}).
+%LFPy runs on top of the NEURON-simulator, using the included Python interface
+%(\url{http://www.neuron.yale.edu}).
 
 LFPy provides:
 \begin{itemize}[nolistsep, topsep=0em, leftmargin=1pc]
 \item A forward modeling scheme for calculating extracellular
   potentials from compartmental membrane currents in an infinite
   homogeneous linear extracellular medium
-\item Python-classes for setting up cells, synapses and recording
-  electrodes
+%\item Python-classes for setting up cells, synapses and recording
+%  electrodes
 \item Scripting capabilities thanks to NEURON and the
   Python programming environment
 \item Simultaneous simulation of the model cell responses and
@@ -231,7 +241,7 @@ MNE is a software package for processing magnetoencephalography (MEG) and electr
   statistics, multivariate decoding
 \end{itemize}
 
-\vspace{1em}
+%\vspace{1em}
 \includegraphics[width=\columnwidth]{mne_screenshot.pdf}
 % Selected set of citations, Here is an example:
 \ndcite{A. Gramfort, \emph{et.~al.}
@@ -283,7 +293,7 @@ Navigate, visualize and analyze electrophysiological data. Designed to be flexib
 \item Use supplied plugins for common plots such as Raster Plot, PSTH, Correlogram and analog signals
 \end{itemize}
 
-\vspace{1em}
+%\vspace{1em}
 \includegraphics[width=\columnwidth]{spykeviewer_screenshot.png}
 % Selected set of citations, Here is an example:
 % No publication yet...
@@ -299,12 +309,12 @@ in Python. It features manual and automatic clustering, many data
 formats and it is memory-efficient. Truely Open Source, BSD-licensed.
 
 \begin{itemize}[nolistsep,topsep=0em,leftmargin=1pc]
-\item User-friendly and customisable
+%\item User-friendly and customisable
 \item Interactive command-line interface in Python
 \item GUI and visualization widgets
-\item Automatic and manual clustering
+%\item Automatic and manual clustering
 \item Support for multi-channel data
-\item Based on: NumPy, PyTables, matplotlib, scikit-learn
+%\item Based on: NumPy, PyTables, matplotlib, scikit-learn
 \end{itemize}
 %___________________________________________________________________________
 
